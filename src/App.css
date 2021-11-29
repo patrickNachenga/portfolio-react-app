@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root{
+  --primary-white: #fff;
+  --primary-dark: rgb(12, 11, 11);
+  --primary-gold: rgb(216, 126, 9);
+  --primary-red: rgb(216, 9, 9);
+  --primary-goldrish: rgba(216, 126, 9, 0.336);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: "roboto condensed", sans-serif ;
+}
+/****************************** NAVEBAR ***********************************/
+.logo{
+  width:16.25rem;
+  max-height: 3.5rem;
+}
+/* *********  Menu Link ******** */
+nav a.nav-link{
+  font-weight: 500;
+  letter-spacing: 0.038rem;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav ul li{
+  text-transform: uppercase;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-nav > li > a{
+  font-size: .8rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  color: var(--primary-gold) !important;
+  border-top: 0.1875rem solid var(--primary-white);
+}
+
+.navbar-brand{
+  max-width: 17rem;
+  height: 3.6rem;
+  padding: 0rem !important;
+}
+nav{
+  border-bottom: 0.2px solid var(--primary-goldrish);
+  z-index: 2;
+}
+
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus{
+  border-top: 0.1875rem solid var(--primary-gold);
+}
+.navbar-nav > li > a:hover{
+  border-top: 0.1875rem solid var(--primary-gold);
+}
+
+/* **********  Header ********** */
+.header-wraper{
+  position: relative;
+  background:  linear-gradient(
+    rgba(2, 2, 2, 0.582), 
+    rgba(12, 9, 9, 0.637)
+  ), url(justice.jpg) no-repeat;
+  background-position: cover;
+  height: 98vh;
+}
+
+.main-info {
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-family: "roboto condensed", sans-serif, algerian, Verdana, Geneva, Tahoma, sans-serif ;
 }
 
-.App-link {
-  color: #61dafb;
+.main-info h1{
+  color: var(--primary-white);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.038rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* **********  Typed text ************* */
+
+.typed-text{
+  font-size: 1.7rem;
+  color: var(--primary-white);
+}
+
+/* *********  Button -main-info ********* */
+.btn-main-info{
+  border: 1px solid var(--primary-white);
+  text-transform: uppercase;
+  border-radius: 0rem;
+  padding: 0.655rem 0.8rem 0.8rem 0.8rem;
+  color: var(--primary-white);
+  margin-top: 2rem;
+  background-color: var(--primary-goldrish);
+  letter-spacing: 0.038rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-main-info:hover{
+  border: 1px solid var(--primary-gold);
+  text-transform: uppercase;
+  color: var(--primary-gold);
+  background-color: var(--primary-white);
+  text-decoration: none;
+  transition: .2s ease-in-out;
+}
+
+/* ******************  Page Content ****************** */
+.pages{
+  height: 95vh;
+  padding-top: 8rem;
+  border-bottom: 0.2px solid rgba(224, 149, 8, 0.493);
+}
+.pages h2{
+  color: var(--primary-gold);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.038rem;
+  text-align: center;
 }
