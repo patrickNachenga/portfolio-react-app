@@ -1,71 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 
-:root{
+:root {
   --primary-white: #fff;
   --primary-dark: rgb(12, 11, 11);
   --primary-gold: rgb(216, 126, 9);
   --primary-red: rgb(216, 9, 9);
   --primary-goldrish: rgba(216, 126, 9, 0.336);
+  --primary-blue: rgba(10, 14, 77, 0.829);
 }
 
-body{
-  font-family: "roboto condensed", sans-serif ;
+body {
+  font-family: "roboto condensed", sans-serif;
 }
 /****************************** NAVEBAR ***********************************/
-.logo{
-  width:16.25rem;
+.logo {
+  width: 16.25rem;
   max-height: 3.5rem;
 }
 /* *********  Menu Link ******** */
-nav a.nav-link{
+nav a.nav-link {
   font-weight: 500;
   letter-spacing: 0.038rem;
   cursor: pointer;
 }
 
-nav ul li{
+nav ul li {
   text-transform: uppercase;
 }
 
-.navbar-nav > li > a{
-  font-size: .8rem;
+.navbar-nav > li > a {
+  font-size: 0.8rem;
   margin-left: 0.75rem;
   margin-right: 0.75rem;
   color: var(--primary-gold) !important;
   border-top: 0.1875rem solid var(--primary-white);
 }
 
-.navbar-brand{
+.navbar-brand {
   max-width: 17rem;
   height: 3.6rem;
   padding: 0rem !important;
 }
-nav{
+nav {
   border-bottom: 0.2px solid var(--primary-goldrish);
   z-index: 2;
 }
 
-
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus{
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
   border-top: 0.1875rem solid var(--primary-gold);
 }
-.navbar-nav > li > a:hover{
+.navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-gold);
 }
 
 /* **********  Header ********** */
-.header-wraper{
+.header-wraper {
   position: relative;
-  background:  linear-gradient(
-    rgba(2, 2, 2, 0.582), 
-    rgba(12, 9, 9, 0.637)
-  ), url(justice.jpg) no-repeat;
+  background: linear-gradient(rgba(2, 2, 2, 0.582), rgba(12, 9, 9, 0.637)),
+    url(justice.jpg) no-repeat;
   background-position: cover;
   height: 98vh;
 }
 
 .main-info {
-  position:absolute;
+  position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
@@ -74,10 +73,11 @@ nav{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "roboto condensed", sans-serif, algerian, Verdana, Geneva, Tahoma, sans-serif ;
+  font-family: "roboto condensed", sans-serif, algerian, Verdana, Geneva, Tahoma,
+    sans-serif;
 }
 
-.main-info h1{
+.main-info h1 {
   color: var(--primary-white);
   text-transform: uppercase;
   font-weight: 600;
@@ -86,13 +86,13 @@ nav{
 
 /* **********  Typed text ************* */
 
-.typed-text{
+.typed-text {
   font-size: 1.7rem;
   color: var(--primary-white);
 }
 
 /* *********  Button -main-info ********* */
-.btn-main-info{
+.btn-main-info {
   border: 1px solid var(--primary-white);
   text-transform: uppercase;
   border-radius: 0rem;
@@ -105,22 +105,22 @@ nav{
   text-decoration: none;
 }
 
-.btn-main-info:hover{
+.btn-main-info:hover {
   border: 1px solid var(--primary-gold);
   text-transform: uppercase;
   color: var(--primary-gold);
   background-color: var(--primary-white);
   text-decoration: none;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 /* ******************  Page Content ****************** */
-.pages{
+.pages {
   height: 95vh;
   padding-top: 8rem;
   border-bottom: 0.2px solid rgba(224, 149, 8, 0.493);
 }
-.pages h2{
+.pages h2 {
   color: var(--primary-gold);
   text-transform: uppercase;
   font-weight: 600;

@@ -6,11 +6,11 @@ import Main from './components/Main';
 
 function App() {
   return (
-    <>
+    <div>
       <Navbar />
       <Header />
       <Main />
-    </>
+    </div>
   );
 }
 
